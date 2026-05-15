@@ -1,5 +1,5 @@
 pdfplumber
-langchain
+langchain-text-splitters
 openai
 faiss-cpu
 sentence-transformers
