@@ -3,9 +3,9 @@ import os
 from dotenv import load_dotenv
 import pdfplumber
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.llms import OpenAI
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain.chat_models import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
@@ -33,7 +33,7 @@ def create_vectorstore(text):
     return vectorstore
 
 def setup_qa_chain(vectorstore):
-    llm = OpenAI(temperature=0, model="gpt-3.5-turbo")
+    llm = ChatOPenAI(temperature=0, model="gpt-3.5-turbo")
     
     prompt_template = PromptTemplate(
         input_variables=["context", "question"],
