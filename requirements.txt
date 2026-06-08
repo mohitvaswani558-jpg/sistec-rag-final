@@ -2,7 +2,6 @@ streamlit
 langchain
 langchain-community
 langchain-text-splitters
-RecursiveCharacterTextSplitter
 openai
 faiss-cpu
 tiktoken
