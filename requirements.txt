@@ -1,7 +1,7 @@
-pdfplumber
-langchain-text-splitters
+streamlit
+langchain
 openai
 faiss-cpu
+tiktoken
+pypdf
 sentence-transformers
-python-dotenv
-langchain
