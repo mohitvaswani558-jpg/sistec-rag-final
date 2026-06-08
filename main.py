@@ -2,7 +2,7 @@ import sys
 import os
 from dotenv import load_dotenv
 import pdfplumber
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.llms import OpenAI
