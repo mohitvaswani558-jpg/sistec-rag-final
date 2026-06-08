@@ -5,7 +5,7 @@ import pdfplumber
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
@@ -33,7 +33,7 @@ def create_vectorstore(text):
     return vectorstore
 
 def setup_qa_chain(vectorstore):
-    llm = ChatOPenAI(temperature=0, model="gpt-3.5-turbo")
+    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
     
     prompt_template = PromptTemplate(
         input_variables=["context", "question"],
